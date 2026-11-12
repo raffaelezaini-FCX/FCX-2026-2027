@@ -1,73 +1,267 @@
 {
   "riders": [
-    { "name": "van der poel m.", "value": 65 },
-    { "name": "vantourenhout m.", "value": 54 },
-    { "name": "vandeputte n.", "value": 52 },
-    { "name": "van aert w.", "value": 45 },
-    { "name": "nieuwenhuis j.", "value": 40 },
-    { "name": "sweeck l.", "value": 40 },
-    { "name": "nys t.", "value": 40 },
-    { "name": "wyseure j.", "value": 31 },
-    { "name": "orts f.", "value": 30 },
-    { "name": "verstrynge e.", "value": 30 },
-    { "name": "del grosso t.", "value": 30 },
-    { "name": "aerts t.", "value": 30 },
-    { "name": "michels j.", "value": 27 },
-    { "name": "mason c.", "value": 25 },
-    { "name": "ronhaar p.", "value": 25 },
-    { "name": "kuypers g.", "value": 22 },
-    { "name": "vandenbosch t.", "value": 20 },
-    { "name": "kamp r.", "value": 20 },
-    { "name": "hendrikx m.", "value": 20 },
-    { "name": "meeussen w.", "value": 16 },
-    { "name": "kuhn k.", "value": 15 },
-    { "name": "van de putte v.", "value": 15 },
-    { "name": "hermans q.", "value": 15 },
-    { "name": "corsus y.", "value": 12 },
-    { "name": "fontana f.", "value": 10 },
-    { "name": "ferdinande a.", "value": 9 },
-    { "name": "vandenberghe v.", "value": 5 },
-    { "name": "stromheyer a.", "value": 5 },
-    { "name": "sparfel a.", "value": 5 },
-    { "name": "mein t.", "value": 5 },
-    { "name": "meeussen t.", "value": 5 },
-    { "name": "junquera san millan m.", "value": 5 },
-    { "name": "clarck t.", "value": 5 },
-    { "name": "brunner e.", "value": 5 },
-    { "name": "laurissen y.", "value": 4 },
-    { "name": "janssen w.", "value": 4 },
-    { "name": "lejeune g.", "value": 2 },
-    { "name": "viezzi s.", "value": 2 },
-    { "name": "van lierop d.", "value": 2 },
-    { "name": "van kempen j.", "value": 2 },
-    { "name": "suarez fernandez k.", "value": 2 },
-    { "name": "soelen k.", "value": 2 },
-    { "name": "lelandais r.", "value": 2 },
-    { "name": "inguanzo macho g.", "value": 2 },
-    { "name": "de moyer k.", "value": 2 },
-    { "name": "boros m.", "value": 2 },
-    { "name": "bommenel n.", "value": 2 },
-    { "name": "bertolini g.", "value": 2 },
-    { "name": "agostinacchio f.", "value": 2 },
-    { "name": "van den eynde m.", "value": 1 },
-    { "name": "thomas t.", "value": 1 },
-    { "name": "takacs z.", "value": 1 },
-    { "name": "meunt d.", "value": 1 },
-    { "name": "loockx l.", "value": 1 },
-    { "name": "jezek v.", "value": 1 },
-    { "name": "haverdings d.", "value": 1 },
-    { "name": "groslambert m.", "value": 1 },
-    { "name": "groenendal b.", "value": 1 },
-    { "name": "debord r.", "value": 1 },
-    { "name": "de bruickere k.", "value": 1 },
-    { "name": "ceolin f.", "value": 1 },
-    { "name": "baers a.", "value": 1 }
+    {
+      "name": "van der poel m.",
+      "value": 65
+    },
+    {
+      "name": "vantourenhout m.",
+      "value": 54
+    },
+    {
+      "name": "vandeputte n.",
+      "value": 52
+    },
+    {
+      "name": "van aert w.",
+      "value": 45
+    },
+    {
+      "name": "nieuwenhuis j.",
+      "value": 40
+    },
+    {
+      "name": "sweeck l.",
+      "value": 40
+    },
+    {
+      "name": "nys t.",
+      "value": 40
+    },
+    {
+      "name": "wyseure j.",
+      "value": 31
+    },
+    {
+      "name": "orts f.",
+      "value": 30
+    },
+    {
+      "name": "verstrynge e.",
+      "value": 30
+    },
+    {
+      "name": "del grosso t.",
+      "value": 30
+    },
+    {
+      "name": "aerts t.",
+      "value": 30
+    },
+    {
+      "name": "michels j.",
+      "value": 27
+    },
+    {
+      "name": "mason c.",
+      "value": 25
+    },
+    {
+      "name": "ronhaar p.",
+      "value": 25
+    },
+    {
+      "name": "kuypers g.",
+      "value": 22
+    },
+    {
+      "name": "vandenbosch t.",
+      "value": 20
+    },
+    {
+      "name": "kamp r.",
+      "value": 20
+    },
+    {
+      "name": "hendrikx m.",
+      "value": 20
+    },
+    {
+      "name": "meeussen w.",
+      "value": 16
+    },
+    {
+      "name": "kuhn k.",
+      "value": 15
+    },
+    {
+      "name": "van de putte v.",
+      "value": 15
+    },
+    {
+      "name": "hermans q.",
+      "value": 15
+    },
+    {
+      "name": "corsus y.",
+      "value": 12
+    },
+    {
+      "name": "fontana f.",
+      "value": 10
+    },
+    {
+      "name": "ferdinande a.",
+      "value": 9
+    },
+    {
+      "name": "vandenberghe v.",
+      "value": 5
+    },
+    {
+      "name": "stromheyer a.",
+      "value": 5
+    },
+    {
+      "name": "sparfel a.",
+      "value": 5
+    },
+    {
+      "name": "mein t.",
+      "value": 5
+    },
+    {
+      "name": "meeussen t.",
+      "value": 5
+    },
+    {
+      "name": "junquera san millan m.",
+      "value": 5
+    },
+    {
+      "name": "clarck t.",
+      "value": 5
+    },
+    {
+      "name": "brunner e.",
+      "value": 5
+    },
+    {
+      "name": "laurissen y.",
+      "value": 4
+    },
+    {
+      "name": "janssen w.",
+      "value": 4
+    },
+    {
+      "name": "lejeune g.",
+      "value": 2
+    },
+    {
+      "name": "viezzi s.",
+      "value": 2
+    },
+    {
+      "name": "van lierop d.",
+      "value": 2
+    },
+    {
+      "name": "van kempen j.",
+      "value": 2
+    },
+    {
+      "name": "suarez fernandez k.",
+      "value": 2
+    },
+    {
+      "name": "soelen k.",
+      "value": 2
+    },
+    {
+      "name": "lelandais r.",
+      "value": 2
+    },
+    {
+      "name": "inguanzo macho g.",
+      "value": 2
+    },
+    {
+      "name": "de moyer k.",
+      "value": 2
+    },
+    {
+      "name": "boros m.",
+      "value": 2
+    },
+    {
+      "name": "bommenel n.",
+      "value": 2
+    },
+    {
+      "name": "bertolini g.",
+      "value": 2
+    },
+    {
+      "name": "agostinacchio f.",
+      "value": 2
+    },
+    {
+      "name": "van den eynde m.",
+      "value": 1
+    },
+    {
+      "name": "thomas t.",
+      "value": 1
+    },
+    {
+      "name": "takacs z.",
+      "value": 1
+    },
+    {
+      "name": "meunt d.",
+      "value": 1
+    },
+    {
+      "name": "loockx l.",
+      "value": 1
+    },
+    {
+      "name": "jezek v.",
+      "value": 1
+    },
+    {
+      "name": "haverdings d.",
+      "value": 1
+    },
+    {
+      "name": "groslambert m.",
+      "value": 1
+    },
+    {
+      "name": "groenendal b.",
+      "value": 1
+    },
+    {
+      "name": "debord r.",
+      "value": 1
+    },
+    {
+      "name": "de bruickere k.",
+      "value": 1
+    },
+    {
+      "name": "ceolin f.",
+      "value": 1
+    },
+    {
+      "name": "baers a.",
+      "value": 1
+    }
   ],
   "p1": {
     "name": "BOGI",
     "score": 0,
-    "budget": 170,
-    "roster": [],
+    "budget": 10,
+    "roster": [
+      "vandeputte n.",
+      "orts f.",
+      "wyseure j.",
+      "vandenbosch t.",
+      "hendrikx m.",
+      "vandenberghe v.",
+      "lejeune g."
+    ],
     "starters": [],
     "tradeDone": false,
     "initialBudget": 170
@@ -75,8 +269,16 @@
   "p2": {
     "name": "JACOPO",
     "score": 0,
-    "budget": 170,
-    "roster": [],
+    "budget": 10,
+    "roster": [
+      "vandeputte n.",
+      "orts f.",
+      "nieuwenhuis j.",
+      "kamp r.",
+      "corsus y.",
+      "loockx l.",
+      "mein t."
+    ],
     "starters": [],
     "tradeDone": false,
     "initialBudget": 170
