@@ -273,18 +273,18 @@
   "p2": {
     "name": "JACOPO",
     "score": 89,
-    "budget": 9,
+    "budget": 6,
     "roster": [
       "orts f.",
       "nieuwenhuis j.",
-      "kamp r.",
       "corsus y.",
       "loockx l.",
       "janssen w.",
-      "vantourenhout m."
+      "vantourenhout m.",
+      "kuypers g."
     ],
     "starters": [],
-    "tradeDone": false,
+    "tradeDone": true,
     "initialBudget": 170
   },
   "raceCount": 3,
