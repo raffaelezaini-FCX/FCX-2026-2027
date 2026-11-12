@@ -10,7 +10,7 @@
     },
     {
       "name": "vandeputte n.",
-      "value": 52
+      "value": 53
     },
     {
       "name": "van aert w.",
@@ -18,7 +18,7 @@
     },
     {
       "name": "nieuwenhuis j.",
-      "value": 40
+      "value": 42
     },
     {
       "name": "sweeck l.",
@@ -30,11 +30,11 @@
     },
     {
       "name": "wyseure j.",
-      "value": 31
+      "value": 33
     },
     {
       "name": "orts f.",
-      "value": 30
+      "value": 31
     },
     {
       "name": "verstrynge e.",
@@ -146,7 +146,7 @@
     },
     {
       "name": "lejeune g.",
-      "value": 2
+      "value": 3
     },
     {
       "name": "viezzi s.",
@@ -251,7 +251,7 @@
   ],
   "p1": {
     "name": "BOGI",
-    "score": 0,
+    "score": 48,
     "budget": 10,
     "roster": [
       "vandeputte n.",
@@ -262,19 +262,13 @@
       "vandenberghe v.",
       "lejeune g."
     ],
-    "starters": [
-      "vandeputte n.",
-      "orts f.",
-      "vandenbosch t.",
-      "wyseure j.",
-      "hendrikx m."
-    ],
+    "starters": [],
     "tradeDone": false,
     "initialBudget": 170
   },
   "p2": {
     "name": "JACOPO",
-    "score": 0,
+    "score": 42,
     "budget": 10,
     "roster": [
       "vandeputte n.",
@@ -285,16 +279,103 @@
       "loockx l.",
       "mein t."
     ],
-    "starters": [
-      "vandeputte n.",
-      "orts f.",
-      "nieuwenhuis j.",
-      "kamp r.",
-      "corsus y."
-    ],
+    "starters": [],
     "tradeDone": false,
     "initialBudget": 170
   },
-  "raceCount": 0,
-  "raceHistory": []
+  "raceCount": 1,
+  "raceHistory": [
+    {
+      "id": 1,
+      "type": "HG Cross",
+      "name": "Heerderstrand",
+      "date": "2026-11-12",
+      "top10": [
+        "wyseure j.",
+        "nieuwenhuis j.",
+        "vandeputte n.",
+        "orts f.",
+        "lejeune g.",
+        "hendrikx m.",
+        "sweeck l.",
+        "kamp r.",
+        "janssen w.",
+        "corsus y."
+      ],
+      "dnfs": [],
+      "p1Points": 48,
+      "p2Points": 42,
+      "p1Details": [
+        {
+          "name": "vandeputte n.",
+          "points": 12
+        },
+        {
+          "name": "orts f.",
+          "points": 9
+        },
+        {
+          "name": "vandenbosch t.",
+          "points": 0
+        },
+        {
+          "name": "wyseure j.",
+          "points": 21
+        },
+        {
+          "name": "hendrikx m.",
+          "points": 6
+        }
+      ],
+      "p2Details": [
+        {
+          "name": "vandeputte n.",
+          "points": 12
+        },
+        {
+          "name": "orts f.",
+          "points": 9
+        },
+        {
+          "name": "nieuwenhuis j.",
+          "points": 15
+        },
+        {
+          "name": "kamp r.",
+          "points": 4
+        },
+        {
+          "name": "corsus y.",
+          "points": 2
+        }
+      ],
+      "priceChanges": [
+        {
+          "name": "vandeputte n.",
+          "delta": 1,
+          "newVal": 53
+        },
+        {
+          "name": "nieuwenhuis j.",
+          "delta": 2,
+          "newVal": 42
+        },
+        {
+          "name": "wyseure j.",
+          "delta": 2,
+          "newVal": 33
+        },
+        {
+          "name": "orts f.",
+          "delta": 1,
+          "newVal": 31
+        },
+        {
+          "name": "lejeune g.",
+          "delta": 1,
+          "newVal": 3
+        }
+      ]
+    }
+  ]
 }
