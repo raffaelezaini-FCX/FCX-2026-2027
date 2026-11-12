@@ -6,11 +6,11 @@
     },
     {
       "name": "vantourenhout m.",
-      "value": 54
+      "value": 56
     },
     {
       "name": "vandeputte n.",
-      "value": 53
+      "value": 54
     },
     {
       "name": "van aert w.",
@@ -30,11 +30,11 @@
     },
     {
       "name": "wyseure j.",
-      "value": 33
+      "value": 34
     },
     {
       "name": "orts f.",
-      "value": 31
+      "value": 32
     },
     {
       "name": "verstrynge e.",
@@ -54,7 +54,7 @@
     },
     {
       "name": "mason c.",
-      "value": 25
+      "value": 26
     },
     {
       "name": "ronhaar p.",
@@ -78,11 +78,11 @@
     },
     {
       "name": "meeussen w.",
-      "value": 16
+      "value": 18
     },
     {
       "name": "kuhn k.",
-      "value": 15
+      "value": 16
     },
     {
       "name": "van de putte v.",
@@ -251,7 +251,7 @@
   ],
   "p1": {
     "name": "BOGI",
-    "score": 48,
+    "score": 78,
     "budget": 3,
     "roster": [
       "vandeputte n.",
@@ -262,19 +262,13 @@
       "lejeune g.",
       "michels j."
     ],
-    "starters": [
-      "vandeputte n.",
-      "orts f.",
-      "wyseure j.",
-      "hendrikx m.",
-      "michels j."
-    ],
-    "tradeDone": true,
+    "starters": [],
+    "tradeDone": false,
     "initialBudget": 170
   },
   "p2": {
     "name": "JACOPO",
-    "score": 42,
+    "score": 70,
     "budget": 11,
     "roster": [
       "vandeputte n.",
@@ -285,17 +279,11 @@
       "loockx l.",
       "janssen w."
     ],
-    "starters": [
-      "vandeputte n.",
-      "orts f.",
-      "kamp r.",
-      "corsus y.",
-      "loockx l."
-    ],
-    "tradeDone": true,
+    "starters": [],
+    "tradeDone": false,
     "initialBudget": 170
   },
-  "raceCount": 1,
+  "raceCount": 2,
   "raceHistory": [
     {
       "id": 1,
@@ -386,6 +374,108 @@
           "name": "lejeune g.",
           "delta": 1,
           "newVal": 3
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "Superprestige",
+      "name": "Overijse",
+      "date": "2026-10-25",
+      "top10": [
+        "vantourenhout m.",
+        "meeussen w.",
+        "vandeputte n.",
+        "mason c.",
+        "kuhn k.",
+        "orts f.",
+        "wyseure j.",
+        "loockx l.",
+        "van de putte v.",
+        "vandenberghe v."
+      ],
+      "dnfs": [],
+      "p1Points": 30,
+      "p2Points": 28,
+      "p1Details": [
+        {
+          "name": "vandeputte n.",
+          "points": 15
+        },
+        {
+          "name": "orts f.",
+          "points": 8
+        },
+        {
+          "name": "wyseure j.",
+          "points": 7
+        },
+        {
+          "name": "hendrikx m.",
+          "points": 0
+        },
+        {
+          "name": "michels j.",
+          "points": 0
+        }
+      ],
+      "p2Details": [
+        {
+          "name": "vandeputte n.",
+          "points": 15
+        },
+        {
+          "name": "orts f.",
+          "points": 8
+        },
+        {
+          "name": "kamp r.",
+          "points": 0
+        },
+        {
+          "name": "corsus y.",
+          "points": 0
+        },
+        {
+          "name": "loockx l.",
+          "points": 5
+        }
+      ],
+      "priceChanges": [
+        {
+          "name": "vantourenhout m.",
+          "delta": 2,
+          "newVal": 56
+        },
+        {
+          "name": "vandeputte n.",
+          "delta": 1,
+          "newVal": 54
+        },
+        {
+          "name": "wyseure j.",
+          "delta": 1,
+          "newVal": 34
+        },
+        {
+          "name": "orts f.",
+          "delta": 1,
+          "newVal": 32
+        },
+        {
+          "name": "mason c.",
+          "delta": 1,
+          "newVal": 26
+        },
+        {
+          "name": "meeussen w.",
+          "delta": 2,
+          "newVal": 18
+        },
+        {
+          "name": "kuhn k.",
+          "delta": 1,
+          "newVal": 16
         }
       ]
     }
