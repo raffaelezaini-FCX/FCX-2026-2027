@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FantaCX Admin Panel</title>
+    <title>FantaCX - Sincronizzato</title>
     <style>
         :root {
             --bg-color: #121212;
@@ -45,6 +45,18 @@
             font-size: 1.1rem;
             color: var(--primary);
         }
+
+        .sync-status {
+            font-size: 0.75rem;
+            padding: 4px 8px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-top: 4px;
+            font-weight: bold;
+        }
+        .sync-ok { background: rgba(3, 218, 198, 0.2); color: var(--secondary); }
+        .sync-err { background: rgba(207, 102, 121, 0.2); color: var(--error); }
+        .sync-sync { background: rgba(187, 134, 252, 0.2); color: var(--primary); }
 
         .container {
             padding: 15px;
@@ -233,7 +245,8 @@
 <body>
 
     <header>
-        <h1>FantaCX - Panel Amministratore</h1>
+        <h1>FCX 2026/2027</h1>
+        <div id="sync-indicator" class="sync-status sync-sync">Connessione al Cloud...</div>
     </header>
 
     <div class="container">
@@ -446,13 +459,13 @@
                 <h2>Configurazione Iniziale Rose</h2>
                 <div id="roster-init-status-msg"></div>
 
-                <h3>BOGI (Max 178 Cr)</h3>
+                <h3>BOGI (Max 170 Cr)</h3>
                 <div id="p1-selects"></div>
                 <div id="p1-budget-status" style="margin-top:5px; font-weight:bold;"></div>
 
                 <hr style="margin:15px 0; border-color:var(--border);">
 
-                <h3>JACOPO (Max 176 Cr)</h3>
+                <h3>JACOPO (Max 170 Cr)</h3>
                 <div id="p2-selects"></div>
                 <div id="p2-budget-status" style="margin-top:5px; font-weight:bold;"></div>
 
@@ -474,71 +487,11 @@
     </div>
 
     <script>
-        // LISTINO UFFICIALE AGGIORNATO
-        const initialRiderList = [
-            { name: "van der poel m.", value: 65 },
-            { name: "vantourenhout m.", value: 56 },
-            { name: "vandeputte n.", value: 54 },
-            { name: "van aert w.", value: 45 },
-            { name: "nieuwenhuis j.", value: 42 },
-            { name: "sweeck l.", value: 40 },
-            { name: "nys t.", value: 40 },
-            { name: "wyseure j.", value: 34 },
-            { name: "orts f.", value: 32 },
-            { name: "verstrynge e.", value: 30 },
-            { name: "del grosso t.", value: 30 },
-            { name: "aerts t.", value: 30 },
-            { name: "michels j.", value: 27 },
-            { name: "mason c.", value: 26 },
-            { name: "ronhaar p.", value: 25 },
-            { name: "kuypers g.", value: 22 },
-            { name: "vandenbosch t.", value: 20 },
-            { name: "kamp r.", value: 20 },
-            { name: "hendrikx m.", value: 20 },
-            { name: "meeussen w.", value: 18 },
-            { name: "kuhn k.", value: 16 },
-            { name: "van de putte v.", value: 15 },
-            { name: "hermans q.", value: 15 },
-            { name: "corsus y.", value: 12 },
-            { name: "fontana f.", value: 10 },
-            { name: "ferdinande a.", value: 9 },
-            { name: "vandenberghe v.", value: 5 },
-            { name: "stromheyer a.", value: 5 },
-            { name: "sparfel a.", value: 5 },
-            { name: "mein t.", value: 5 },
-            { name: "meeussen t.", value: 5 },
-            { name: "junquera san millan m.", value: 5 },
-            { name: "clarck t.", value: 5 },
-            { name: "brunner e.", value: 5 },
-            { name: "laurissen y.", value: 4 },
-            { name: "janssen w.", value: 4 },
-            { name: "lejeune g.", value: 3 },
-            { name: "viezzi s.", value: 2 },
-            { name: "van lierop d.", value: 2 },
-            { name: "van kempen j.", value: 2 },
-            { name: "suarez fernandez k.", value: 2 },
-            { name: "soelen k.", value: 2 },
-            { name: "lelandais r.", value: 2 },
-            { name: "inguanzo macho g.", value: 2 },
-            { name: "de moyer k.", value: 2 },
-            { name: "boros m.", value: 2 },
-            { name: "bommenel n.", value: 2 },
-            { name: "bertolini g.", value: 2 },
-            { name: "agostinacchio f.", value: 2 },
-            { name: "van den eynde m.", value: 1 },
-            { name: "thomas t.", value: 1 },
-            { name: "takacs z.", value: 1 },
-            { name: "meunt d.", value: 1 },
-            { name: "loockx l.", value: 1 },
-            { name: "jezek v.", value: 1 },
-            { name: "haverdings d.", value: 1 },
-            { name: "groslambert m.", value: 1 },
-            { name: "groenendal b.", value: 1 },
-            { name: "debord r.", value: 1 },
-            { name: "de bruickere k.", value: 1 },
-            { name: "ceolin f.", value: 1 },
-            { name: "baers a.", value: 1 }
-        ];
+        // CONFIGURAZIONE GITHUB API
+        const GITHUB_USER = "raffaelezaini-FCX"; // Il tuo username GitHub
+        const GITHUB_REPO = "FCX-2026-2027";      // Il nome esatto del repository
+        const GITHUB_PATH = "db.json";            // Percorso del file JSON
+        const GITHUB_TOKEN = "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"; // Sostituisci con il token ghp_... che hai copiato!
 
         const pointsTable = {
             "Mondiale": [53, 39, 31, 25, 20, 16, 13, 10, 8, 6],
@@ -562,26 +515,18 @@
 
         let state = {
             riders: [],
-            p1: { name: "BOGI", score: 78, budget: 178, roster: [], starters: [], tradeDone: false, initialBudget: 178 },
-            p2: { name: "JACOPO", score: 70, budget: 176, roster: [], starters: [], tradeDone: false, initialBudget: 176 },
+            p1: { name: "BOGI", score: 0, budget: 170, roster: [], starters: [], tradeDone: false, initialBudget: 170 },
+            p2: { name: "JACOPO", score: 0, budget: 170, roster: [], starters: [], tradeDone: false, initialBudget: 170 },
             raceCount: 0,
             raceHistory: []
         };
 
+        let fileSha = null; // Necessario per le API di GitHub per aggiornare il file
         let currentPendingRace = null;
 
-        function initApp() {
-            const savedState = localStorage.getItem('fantaCX_pwa_state_v9');
-            if (savedState) {
-                state = JSON.parse(savedState);
-                if (!state.raceHistory) state.raceHistory = [];
-            } else {
-                state.riders = JSON.parse(JSON.stringify(initialRiderList));
-                state.p1 = { name: "BOGI", score: 78, budget: 178, roster: [], starters: [], tradeDone: false, initialBudget: 178 };
-                state.p2 = { name: "JACOPO", score: 70, budget: 176, roster: [], starters: [], tradeDone: false, initialBudget: 176 };
-                state.raceHistory = [];
-            }
-
+        async function initApp() {
+            setSyncStatus("Caricamento da GitHub...", "sync-sync");
+            await loadStateFromGitHub();
             renderInitSelects();
             renderStartersInputs();
             renderRaceInputs();
@@ -589,8 +534,84 @@
             updateUI();
         }
 
-        function saveState() {
-            localStorage.setItem('fantaCX_pwa_state_v9', JSON.stringify(state));
+        function setSyncStatus(text, className) {
+            const el = document.getElementById('sync-indicator');
+            if (el) {
+                el.innerText = text;
+                el.className = "sync-status " + className;
+            }
+        }
+
+        // CARICAMENTO DA GITHUB API
+        async function loadStateFromGitHub() {
+            const url = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${GITHUB_PATH}`;
+            try {
+                const response = await fetch(url, {
+                    headers: {
+                        'Authorization': `token ${GITHUB_TOKEN}`,
+                        'Accept': 'application/vnd.github.v3+json'
+                    }
+                });
+                if (!response.ok) throw new Error("Errore nel recupero dati da GitHub");
+                const data = await response.json();
+                fileSha = data.sha; // Salva lo SHA indispensabile per i successivi commit
+                
+                // Decodifica il contenuto base64 del file db.json
+                const jsonString = decodeURIComponent(escape(atob(data.content)));
+                state = JSON.parse(jsonString);
+                if (!state.raceHistory) state.raceHistory = [];
+                
+                setSyncStatus("Cloud Sync OK", "sync-ok");
+            } catch (error) {
+                console.error("Errore load:", error);
+                setSyncStatus("Errore connessione Cloud", "sync-err");
+            }
+        }
+
+        // SALVATAGGIO SU GITHUB API
+        async function saveState() {
+            setSyncStatus("Salvataggio in corso...", "sync-sync");
+            const url = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${GITHUB_PATH}`;
+            
+            try {
+                // Prima ricarichiamo lo SHA aggiornato per evitare conflitti
+                const checkRes = await fetch(url, {
+                    headers: { 'Authorization': `token ${GITHUB_TOKEN}`, 'Accept': 'application/vnd.github.v3+json' }
+                });
+                if (checkRes.ok) {
+                    const checkData = await checkRes.json();
+                    fileSha = checkData.sha;
+                }
+
+                const jsonString = JSON.stringify(state, null, 2);
+                const contentBase64 = btoa(unescape(encodeURIComponent(jsonString)));
+
+                const response = await fetch(url, {
+                    method: 'PUT',
+                    headers: {
+                        'Authorization': `token ${GITHUB_TOKEN}`,
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/vnd.github.v3+json'
+                    },
+                    body: JSON.stringify({
+                        message: "Aggiornamento dati Fanta CX via app",
+                        content: contentBase64,
+                        sha: fileSha
+                    })
+                });
+
+                if (response.ok) {
+                    const resData = await response.json();
+                    fileSha = resData.content.sha;
+                    setSyncStatus("Cloud Sync OK", "sync-ok");
+                } else {
+                    throw new Error("Errore salvataggio remoto");
+                }
+            } catch (error) {
+                console.error("Errore save:", error);
+                setSyncStatus("Errore salvataggio", "sync-err");
+                alert("Errore di sincronizzazione con GitHub!");
+            }
             updateUI();
         }
 
@@ -774,8 +795,8 @@
                 if (val2) cost2 += state.riders.find(r => r.name === val2)?.value || 0;
             }
 
-            const max1 = state.p1.initialBudget || 178;
-            const max2 = state.p2.initialBudget || 176;
+            const max1 = state.p1.initialBudget || 170;
+            const max2 = state.p2.initialBudget || 170;
 
             const status1 = document.getElementById('p1-budget-status');
             const status2 = document.getElementById('p2-budget-status');
@@ -806,8 +827,8 @@
             let c1 = r1.reduce((sum, name) => sum + state.riders.find(r => r.name === name).value, 0);
             let c2 = r2.reduce((sum, name) => sum + state.riders.find(r => r.name === name).value, 0);
 
-            const max1 = state.p1.initialBudget || 178;
-            const max2 = state.p2.initialBudget || 176;
+            const max1 = state.p1.initialBudget || 170;
+            const max2 = state.p2.initialBudget || 170;
 
             state.p1.roster = r1;
             state.p1.budget = max1 - c1;
@@ -816,7 +837,7 @@
             state.p2.budget = max2 - c2;
 
             saveState();
-            alert("Rose salvate e bloccate con successo!");
+            alert("Rose salvate e bloccate con successo sul Cloud!");
             switchTab('formazione');
         }
 
@@ -876,7 +897,7 @@
             state.p2.starters = p2Starters;
 
             saveState();
-            alert("Formazioni salvate con successo per la prossima gara!");
+            alert("Formazioni salvate con successo sul Cloud!");
             switchTab('gara');
         }
 
@@ -973,7 +994,6 @@
             return pts;
         }
 
-        // GENERAZIONE ANTEPRIMA GARA
         function generateRacePreview() {
             if (state.p1.starters.length !== 5 || state.p2.starters.length !== 5) {
                 alert("Schiera prima le formazioni di 5 titolari nella scheda Formazione!");
@@ -1130,11 +1150,10 @@
             currentPendingRace = null;
 
             saveState();
-            alert(`Gara Pubblicata con successo!\nRisultati e punti registrati.`);
+            alert(`Gara Pubblicata e sincronizzata sul Cloud!`);
             switchTab('historico');
         }
 
-        // RENDER SCHEDA STORICO DETTAGLIATO
         function renderHistory() {
             const container = document.getElementById('history-container');
             if (!state.raceHistory || state.raceHistory.length === 0) {
@@ -1158,7 +1177,6 @@
                         Circuito: <b>${h.type}</b>
                     </p>
 
-                    <!-- SEZIONE CLASSIFICA ARRIVO GARA -->
                     <h4 style="font-size:0.8rem; color:var(--secondary); margin-top:8px; margin-bottom:4px;">Ordine d'Arrivo e DNF:</h4>
                     <ol class="list-numbered" style="padding-left:22px; list-style-type:decimal; margin-bottom:6px;">
                         ${(h.top10 || []).map(rName => `<li>${rName ? rName : '<i>-- non assegnato --</i>'}</li>`).join('')}
@@ -1170,7 +1188,6 @@
 
                     <hr style="border-color:#333; margin:10px 0;">
 
-                    <!-- SEZIONE FORMAZIONI E PUNTI INDIVIDUALI -->
                     <h4 style="font-size:0.8rem; color:var(--secondary); margin-bottom:6px;">Punti Titolari Partecipanti:</h4>
                     
                     <p style="font-size:0.85rem; margin-bottom:2px;"><b>${state.p1.name} (+${h.p1Points} pt totali):</b></p>
@@ -1187,7 +1204,6 @@
                         `).join('')}
                     </ul>
 
-                    <!-- SEZIONE VARIAZIONI LISTINO -->
                     <h4 style="font-size:0.8rem; color:var(--secondary); margin-top:8px; margin-bottom:4px;">Variazioni Listino (Δ Cr):</h4>
                     ${(!h.priceChanges || h.priceChanges.length === 0) ? '<p style="font-size:0.75rem; color:#888;">Nessuna variazione</p>' : ''}
                     <ul style="font-size:0.8rem; padding-left:18px;">
@@ -1201,7 +1217,6 @@
             container.innerHTML = html;
         }
 
-        // GESTIONE MERCATO
         function resetAndRenderMarketOptions() {
             const pId = document.getElementById('market-p').value;
             const p = (pId === '1') ? state.p1 : state.p2;
@@ -1320,7 +1335,7 @@
             p.tradeDone = true;
 
             saveState();
-            alert(`Scambio effettuato con successo!\nCessione: ${outName}\nAcquisto: ${inName}\nNuovo Budget: ${p.budget} Cr`);
+            alert(`Scambio effettuato e sincronizzato sul Cloud!\nCessione: ${outName}\nAcquisto: ${inName}`);
             
             resetAndRenderMarketOptions();
             switchTab('home');
