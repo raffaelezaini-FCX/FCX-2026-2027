@@ -262,7 +262,13 @@
       "vandenberghe v.",
       "lejeune g."
     ],
-    "starters": [],
+    "starters": [
+      "vandeputte n.",
+      "orts f.",
+      "vandenbosch t.",
+      "wyseure j.",
+      "hendrikx m."
+    ],
     "tradeDone": false,
     "initialBudget": 170
   },
@@ -279,7 +285,13 @@
       "loockx l.",
       "mein t."
     ],
-    "starters": [],
+    "starters": [
+      "vandeputte n.",
+      "orts f.",
+      "nieuwenhuis j.",
+      "kamp r.",
+      "corsus y."
+    ],
     "tradeDone": false,
     "initialBudget": 170
   },
