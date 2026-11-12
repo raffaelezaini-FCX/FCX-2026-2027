@@ -256,18 +256,18 @@
   "p1": {
     "name": "BOGI",
     "score": 95,
-    "budget": 1,
+    "budget": 2,
     "roster": [
       "orts f.",
       "wyseure j.",
-      "hendrikx m.",
       "vandenberghe v.",
       "lejeune g.",
       "michels j.",
-      "vantourenhout m."
+      "vantourenhout m.",
+      "meeussen w."
     ],
     "starters": [],
-    "tradeDone": false,
+    "tradeDone": true,
     "initialBudget": 170
   },
   "p2": {
