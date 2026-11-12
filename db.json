@@ -266,7 +266,13 @@
       "vantourenhout m.",
       "meeussen w."
     ],
-    "starters": [],
+    "starters": [
+      "orts f.",
+      "wyseure j.",
+      "michels j.",
+      "vantourenhout m.",
+      "meeussen w."
+    ],
     "tradeDone": true,
     "initialBudget": 170
   },
@@ -283,7 +289,13 @@
       "vantourenhout m.",
       "kuypers g."
     ],
-    "starters": [],
+    "starters": [
+      "orts f.",
+      "loockx l.",
+      "janssen w.",
+      "vantourenhout m.",
+      "kuypers g."
+    ],
     "tradeDone": true,
     "initialBudget": 170
   },
