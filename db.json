@@ -18,11 +18,11 @@
     },
     {
       "name": "nieuwenhuis j.",
-      "value": 43
+      "value": 44
     },
     {
       "name": "sweeck l.",
-      "value": 40
+      "value": 39
     },
     {
       "name": "nys t.",
@@ -30,11 +30,11 @@
     },
     {
       "name": "wyseure j.",
-      "value": 38
+      "value": 40
     },
     {
       "name": "orts f.",
-      "value": 34
+      "value": 35
     },
     {
       "name": "verstrynge e.",
@@ -54,7 +54,7 @@
     },
     {
       "name": "mason c.",
-      "value": 29
+      "value": 31
     },
     {
       "name": "ronhaar p.",
@@ -70,7 +70,7 @@
     },
     {
       "name": "kamp r.",
-      "value": 21
+      "value": 22
     },
     {
       "name": "hendrikx m.",
@@ -82,7 +82,7 @@
     },
     {
       "name": "kuhn k.",
-      "value": 18
+      "value": 19
     },
     {
       "name": "van de putte v.",
@@ -142,11 +142,11 @@
     },
     {
       "name": "janssen w.",
-      "value": 4
+      "value": 3
     },
     {
       "name": "lejeune g.",
-      "value": 3
+      "value": 4
     },
     {
       "name": "viezzi s.",
@@ -255,7 +255,7 @@
   ],
   "p1": {
     "name": "BOGI",
-    "score": 252,
+    "score": 305,
     "budget": 20,
     "roster": [
       "orts f.",
@@ -266,19 +266,13 @@
       "nys t.",
       "kuhn k."
     ],
-    "starters": [
-      "orts f.",
-      "wyseure j.",
-      "lejeune g.",
-      "michels j.",
-      "kuhn k."
-    ],
-    "tradeDone": true,
+    "starters": [],
+    "tradeDone": false,
     "initialBudget": 170
   },
   "p2": {
     "name": "JACOPO",
-    "score": 152,
+    "score": 183,
     "budget": 5,
     "roster": [
       "orts f.",
@@ -289,17 +283,11 @@
       "meeussen w.",
       "wyseure j."
     ],
-    "starters": [
-      "orts f.",
-      "janssen w.",
-      "vantourenhout m.",
-      "meeussen w.",
-      "wyseure j."
-    ],
-    "tradeDone": true,
+    "starters": [],
+    "tradeDone": false,
     "initialBudget": 170
   },
-  "raceCount": 5,
+  "raceCount": 6,
   "raceHistory": [
     {
       "id": 1,
@@ -828,6 +816,121 @@
           "name": "kuhn k.",
           "delta": 1,
           "newVal": 18
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "type": "Superprestige",
+      "name": "Niel - Jaarmarktcross",
+      "date": "2026-11-11",
+      "top10": [
+        "mason c.",
+        "wyseure j.",
+        "nieuwenhuis j.",
+        "orts f.",
+        "lejeune g.",
+        "kuhn k.",
+        "kamp r.",
+        "vantourenhout m.",
+        "michels j.",
+        "hendrikx m."
+      ],
+      "dnfs": [
+        "janssen w.",
+        "sweeck l."
+      ],
+      "p1Points": 53,
+      "p2Points": 31,
+      "p1Details": [
+        {
+          "name": "orts f.",
+          "points": 12
+        },
+        {
+          "name": "wyseure j.",
+          "points": 19
+        },
+        {
+          "name": "lejeune g.",
+          "points": 10
+        },
+        {
+          "name": "michels j.",
+          "points": 4
+        },
+        {
+          "name": "kuhn k.",
+          "points": 8
+        }
+      ],
+      "p2Details": [
+        {
+          "name": "orts f.",
+          "points": 12
+        },
+        {
+          "name": "janssen w.",
+          "points": -5
+        },
+        {
+          "name": "vantourenhout m.",
+          "points": 5
+        },
+        {
+          "name": "meeussen w.",
+          "points": 0
+        },
+        {
+          "name": "wyseure j.",
+          "points": 19
+        }
+      ],
+      "priceChanges": [
+        {
+          "name": "nieuwenhuis j.",
+          "delta": 1,
+          "newVal": 44
+        },
+        {
+          "name": "sweeck l.",
+          "delta": -1,
+          "newVal": 39
+        },
+        {
+          "name": "wyseure j.",
+          "delta": 2,
+          "newVal": 40
+        },
+        {
+          "name": "orts f.",
+          "delta": 1,
+          "newVal": 35
+        },
+        {
+          "name": "mason c.",
+          "delta": 2,
+          "newVal": 31
+        },
+        {
+          "name": "kamp r.",
+          "delta": 1,
+          "newVal": 22
+        },
+        {
+          "name": "kuhn k.",
+          "delta": 1,
+          "newVal": 19
+        },
+        {
+          "name": "janssen w.",
+          "delta": -1,
+          "newVal": 3
+        },
+        {
+          "name": "lejeune g.",
+          "delta": 1,
+          "newVal": 4
         }
       ]
     }
