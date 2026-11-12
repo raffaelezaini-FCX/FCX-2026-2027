@@ -269,7 +269,7 @@
   "p2": {
     "name": "JACOPO",
     "score": 42,
-    "budget": 10,
+    "budget": 11,
     "roster": [
       "vandeputte n.",
       "orts f.",
@@ -277,10 +277,10 @@
       "kamp r.",
       "corsus y.",
       "loockx l.",
-      "mein t."
+      "janssen w."
     ],
     "starters": [],
-    "tradeDone": false,
+    "tradeDone": true,
     "initialBudget": 170
   },
   "raceCount": 1,
