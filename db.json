@@ -6,7 +6,7 @@
     },
     {
       "name": "vantourenhout m.",
-      "value": 58
+      "value": 60
     },
     {
       "name": "vandeputte n.",
@@ -30,11 +30,11 @@
     },
     {
       "name": "wyseure j.",
-      "value": 34
+      "value": 36
     },
     {
       "name": "orts f.",
-      "value": 32
+      "value": 33
     },
     {
       "name": "verstrynge e.",
@@ -50,11 +50,11 @@
     },
     {
       "name": "michels j.",
-      "value": 27
+      "value": 28
     },
     {
       "name": "mason c.",
-      "value": 27
+      "value": 28
     },
     {
       "name": "ronhaar p.",
@@ -62,7 +62,7 @@
     },
     {
       "name": "kuypers g.",
-      "value": 23
+      "value": 24
     },
     {
       "name": "vandenbosch t.",
@@ -82,7 +82,7 @@
     },
     {
       "name": "kuhn k.",
-      "value": 16
+      "value": 17
     },
     {
       "name": "van de putte v.",
@@ -255,7 +255,7 @@
   ],
   "p1": {
     "name": "BOGI",
-    "score": 95,
+    "score": 158,
     "budget": 2,
     "roster": [
       "orts f.",
@@ -266,19 +266,13 @@
       "vantourenhout m.",
       "meeussen w."
     ],
-    "starters": [
-      "orts f.",
-      "wyseure j.",
-      "michels j.",
-      "vantourenhout m.",
-      "meeussen w."
-    ],
-    "tradeDone": true,
+    "starters": [],
+    "tradeDone": false,
     "initialBudget": 170
   },
   "p2": {
     "name": "JACOPO",
-    "score": 89,
+    "score": 126,
     "budget": 6,
     "roster": [
       "orts f.",
@@ -289,17 +283,11 @@
       "vantourenhout m.",
       "kuypers g."
     ],
-    "starters": [
-      "orts f.",
-      "loockx l.",
-      "janssen w.",
-      "vantourenhout m.",
-      "kuypers g."
-    ],
-    "tradeDone": true,
+    "starters": [],
+    "tradeDone": false,
     "initialBudget": 170
   },
-  "raceCount": 3,
+  "raceCount": 4,
   "raceHistory": [
     {
       "id": 1,
@@ -607,6 +595,108 @@
           "name": "bellens j.",
           "delta": 1,
           "newVal": 2
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "Superprestige",
+      "name": "Middelkerke",
+      "date": "2026-11-05",
+      "top10": [
+        "wyseure j.",
+        "vantourenhout m.",
+        "kuhn k.",
+        "mason c.",
+        "michels j.",
+        "kuypers g.",
+        "orts f.",
+        "vandeputte n.",
+        "van de putte v.",
+        "janssen w."
+      ],
+      "dnfs": [],
+      "p1Points": 63,
+      "p2Points": 37,
+      "p1Details": [
+        {
+          "name": "orts f.",
+          "points": 7
+        },
+        {
+          "name": "wyseure j.",
+          "points": 27
+        },
+        {
+          "name": "michels j.",
+          "points": 10
+        },
+        {
+          "name": "vantourenhout m.",
+          "points": 19
+        },
+        {
+          "name": "meeussen w.",
+          "points": 0
+        }
+      ],
+      "p2Details": [
+        {
+          "name": "orts f.",
+          "points": 7
+        },
+        {
+          "name": "loockx l.",
+          "points": 0
+        },
+        {
+          "name": "janssen w.",
+          "points": 3
+        },
+        {
+          "name": "vantourenhout m.",
+          "points": 19
+        },
+        {
+          "name": "kuypers g.",
+          "points": 8
+        }
+      ],
+      "priceChanges": [
+        {
+          "name": "vantourenhout m.",
+          "delta": 2,
+          "newVal": 60
+        },
+        {
+          "name": "wyseure j.",
+          "delta": 2,
+          "newVal": 36
+        },
+        {
+          "name": "orts f.",
+          "delta": 1,
+          "newVal": 33
+        },
+        {
+          "name": "michels j.",
+          "delta": 1,
+          "newVal": 28
+        },
+        {
+          "name": "mason c.",
+          "delta": 1,
+          "newVal": 28
+        },
+        {
+          "name": "kuypers g.",
+          "delta": 1,
+          "newVal": 24
+        },
+        {
+          "name": "kuhn k.",
+          "delta": 1,
+          "newVal": 17
         }
       ]
     }
