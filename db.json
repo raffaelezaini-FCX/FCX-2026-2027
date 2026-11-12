@@ -266,7 +266,13 @@
       "meeussen w.",
       "nys t."
     ],
-    "starters": [],
+    "starters": [
+      "orts f.",
+      "wyseure j.",
+      "michels j.",
+      "meeussen w.",
+      "nys t."
+    ],
     "tradeDone": true,
     "initialBudget": 170
   },
@@ -283,7 +289,13 @@
       "kuypers g.",
       "meeussen w."
     ],
-    "starters": [],
+    "starters": [
+      "orts f.",
+      "nieuwenhuis j.",
+      "vantourenhout m.",
+      "kuypers g.",
+      "meeussen w."
+    ],
     "tradeDone": true,
     "initialBudget": 170
   },
