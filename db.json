@@ -262,7 +262,13 @@
       "michels j.",
       "vantourenhout m."
     ],
-    "starters": [],
+    "starters": [
+      "wyseure j.",
+      "hendrikx m.",
+      "vandenberghe v.",
+      "michels j.",
+      "vantourenhout m."
+    ],
     "tradeDone": true,
     "initialBudget": 170
   },
@@ -279,7 +285,13 @@
       "janssen w.",
       "vantourenhout m."
     ],
-    "starters": [],
+    "starters": [
+      "nieuwenhuis j.",
+      "kamp r.",
+      "loockx l.",
+      "janssen w.",
+      "vantourenhout m."
+    ],
     "tradeDone": true,
     "initialBudget": 170
   },
