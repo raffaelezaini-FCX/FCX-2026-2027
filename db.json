@@ -266,7 +266,13 @@
       "nys t.",
       "kuhn k."
     ],
-    "starters": [],
+    "starters": [
+      "orts f.",
+      "wyseure j.",
+      "lejeune g.",
+      "michels j.",
+      "kuhn k."
+    ],
     "tradeDone": true,
     "initialBudget": 170
   },
@@ -283,7 +289,13 @@
       "meeussen w.",
       "wyseure j."
     ],
-    "starters": [],
+    "starters": [
+      "orts f.",
+      "janssen w.",
+      "vantourenhout m.",
+      "meeussen w.",
+      "wyseure j."
+    ],
     "tradeDone": true,
     "initialBudget": 170
   },
