@@ -6,11 +6,11 @@
     },
     {
       "name": "vantourenhout m.",
-      "value": 60
+      "value": 59
     },
     {
       "name": "vandeputte n.",
-      "value": 55
+      "value": 57
     },
     {
       "name": "van aert w.",
@@ -18,7 +18,7 @@
     },
     {
       "name": "nieuwenhuis j.",
-      "value": 44
+      "value": 45
     },
     {
       "name": "sweeck l.",
@@ -30,11 +30,11 @@
     },
     {
       "name": "wyseure j.",
-      "value": 40
+      "value": 42
     },
     {
       "name": "orts f.",
-      "value": 35
+      "value": 36
     },
     {
       "name": "verstrynge e.",
@@ -50,7 +50,7 @@
     },
     {
       "name": "michels j.",
-      "value": 29
+      "value": 30
     },
     {
       "name": "mason c.",
@@ -82,7 +82,7 @@
     },
     {
       "name": "kuhn k.",
-      "value": 19
+      "value": 20
     },
     {
       "name": "van de putte v.",
@@ -94,7 +94,7 @@
     },
     {
       "name": "corsus y.",
-      "value": 12
+      "value": 13
     },
     {
       "name": "fontana f.",
@@ -255,7 +255,7 @@
   ],
   "p1": {
     "name": "BOGI",
-    "score": 305,
+    "score": 354,
     "budget": 23,
     "roster": [
       "orts f.",
@@ -266,19 +266,13 @@
       "kuhn k.",
       "bellens j."
     ],
-    "starters": [
-      "orts f.",
-      "wyseure j.",
-      "michels j.",
-      "kuhn k.",
-      "bellens j."
-    ],
-    "tradeDone": true,
+    "starters": [],
+    "tradeDone": false,
     "initialBudget": 170
   },
   "p2": {
     "name": "JACOPO",
-    "score": 183,
+    "score": 244,
     "budget": 10,
     "roster": [
       "orts f.",
@@ -289,17 +283,11 @@
       "wyseure j.",
       "vandeputte n."
     ],
-    "starters": [
-      "orts f.",
-      "kuypers g.",
-      "meeussen w.",
-      "wyseure j.",
-      "vandeputte n."
-    ],
-    "tradeDone": true,
+    "starters": [],
+    "tradeDone": false,
     "initialBudget": 170
   },
-  "raceCount": 6,
+  "raceCount": 7,
   "raceHistory": [
     {
       "id": 1,
@@ -943,6 +931,115 @@
           "name": "lejeune g.",
           "delta": 1,
           "newVal": 4
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "Superprestige",
+      "name": "Merksplas",
+      "date": "2026-11-14",
+      "top10": [
+        "vandeputte n.",
+        "wyseure j.",
+        "orts f.",
+        "corsus y.",
+        "nieuwenhuis j.",
+        "kuhn k.",
+        "michels j.",
+        "hendrikx m.",
+        "van de putte v.",
+        "kamp r."
+      ],
+      "dnfs": [
+        "vantourenhout m."
+      ],
+      "p1Points": 49,
+      "p2Points": 61,
+      "p1Details": [
+        {
+          "name": "orts f.",
+          "points": 15
+        },
+        {
+          "name": "wyseure j.",
+          "points": 19
+        },
+        {
+          "name": "michels j.",
+          "points": 7
+        },
+        {
+          "name": "kuhn k.",
+          "points": 8
+        },
+        {
+          "name": "bellens j.",
+          "points": 0
+        }
+      ],
+      "p2Details": [
+        {
+          "name": "orts f.",
+          "points": 15
+        },
+        {
+          "name": "kuypers g.",
+          "points": 0
+        },
+        {
+          "name": "meeussen w.",
+          "points": 0
+        },
+        {
+          "name": "wyseure j.",
+          "points": 19
+        },
+        {
+          "name": "vandeputte n.",
+          "points": 27
+        }
+      ],
+      "priceChanges": [
+        {
+          "name": "vantourenhout m.",
+          "delta": -1,
+          "newVal": 59
+        },
+        {
+          "name": "vandeputte n.",
+          "delta": 2,
+          "newVal": 57
+        },
+        {
+          "name": "nieuwenhuis j.",
+          "delta": 1,
+          "newVal": 45
+        },
+        {
+          "name": "wyseure j.",
+          "delta": 2,
+          "newVal": 42
+        },
+        {
+          "name": "orts f.",
+          "delta": 1,
+          "newVal": 36
+        },
+        {
+          "name": "michels j.",
+          "delta": 1,
+          "newVal": 30
+        },
+        {
+          "name": "kuhn k.",
+          "delta": 1,
+          "newVal": 20
+        },
+        {
+          "name": "corsus y.",
+          "delta": 1,
+          "newVal": 13
         }
       ]
     }
