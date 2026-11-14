@@ -266,7 +266,13 @@
       "kuhn k.",
       "bellens j."
     ],
-    "starters": [],
+    "starters": [
+      "orts f.",
+      "wyseure j.",
+      "michels j.",
+      "kuhn k.",
+      "bellens j."
+    ],
     "tradeDone": true,
     "initialBudget": 170
   },
@@ -283,7 +289,13 @@
       "wyseure j.",
       "vandeputte n."
     ],
-    "starters": [],
+    "starters": [
+      "orts f.",
+      "kuypers g.",
+      "meeussen w.",
+      "wyseure j.",
+      "vandeputte n."
+    ],
     "tradeDone": true,
     "initialBudget": 170
   },
