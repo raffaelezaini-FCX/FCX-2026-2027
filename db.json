@@ -266,7 +266,13 @@
       "bellens j.",
       "mason c."
     ],
-    "starters": [],
+    "starters": [
+      "orts f.",
+      "wyseure j.",
+      "nys t.",
+      "kuhn k.",
+      "mason c."
+    ],
     "tradeDone": true,
     "initialBudget": 170
   },
@@ -283,7 +289,13 @@
       "vandeputte n.",
       "boros m."
     ],
-    "starters": [],
+    "starters": [
+      "orts f.",
+      "kuypers g.",
+      "meeussen w.",
+      "wyseure j.",
+      "vandeputte n."
+    ],
     "tradeDone": true,
     "initialBudget": 170
   },
