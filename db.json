@@ -266,7 +266,13 @@
       "mason c.",
       "nieuwenhuis j."
     ],
-    "starters": [],
+    "starters": [
+      "wyseure j.",
+      "lejeune g.",
+      "bellens j.",
+      "mason c.",
+      "nieuwenhuis j."
+    ],
     "tradeDone": true,
     "initialBudget": 170
   },
@@ -283,7 +289,13 @@
       "vandeputte n.",
       "boros m."
     ],
-    "starters": [],
+    "starters": [
+      "janssen w.",
+      "kuypers g.",
+      "meeussen w.",
+      "wyseure j.",
+      "vandeputte n."
+    ],
     "tradeDone": false,
     "initialBudget": 170
   },
